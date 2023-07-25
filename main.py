@@ -50,6 +50,8 @@ def generate_invoice():
 
     doc_name = "new_invoice" + name + datetime.datetime.now().strftime("%Y-%m-%d-%H%M%S")+ ".docx"
     doc.save(doc_name)
+
+    
     new_invoice()
 
     messagebox.showinfo("Invoice Complete", "Customer Invoice Generated Successful!")
